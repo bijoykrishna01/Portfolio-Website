@@ -132,20 +132,8 @@ app.get('/api/docs/watermarked-pdf', async (req, res) => {
       currentY -= 20;
     }
 
-    // Security Watermark across the page diagonally
-    const watermarkText = `SECURE COPY - ${reviewer.toUpperCase()} - ${new Date().toLocaleDateString()}`;
-    page.drawText(watermarkText, {
-      x: 60,
-      y: 350,
-      size: 20,
-      font: fontBold,
-      color: rgb(0.85, 0.2, 0.2),
-      rotate: degrees(35),
-      opacity: 0.25,
-    });
-
     // Footer
-    page.drawText('Official Academic Dossier • Bijoy Krishna Das • Strictly Private & Confidential', {
+    page.drawText('Official Academic Dossier • Bijoy Krishna Das • Standard Academic Format', {
       x: 100,
       y: 40,
       size: 8,

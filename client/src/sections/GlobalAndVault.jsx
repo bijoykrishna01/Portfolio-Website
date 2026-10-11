@@ -243,7 +243,7 @@ export const GlobalAndVaultSection = ({ lang, onOpenDoc, currentViewer }) => {
           </div>
 
           <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800 text-center text-xs text-slate-400">
-            🔒 All downloads are stamped with: <span className="text-amber-400 font-mono">"WATERMARKED FOR {currentViewer.name.toUpperCase()}"</span>.
+            🔒 Official Academic Documents • Formatted & verified for <span className="text-amber-400 font-mono">{currentViewer.name.toUpperCase()}</span>.
           </div>
 
         </div>

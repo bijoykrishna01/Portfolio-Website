@@ -150,7 +150,7 @@ export const WatermarkModal = ({ isOpen, onClose, docTitle, reviewerName }) => {
               <h4 className="text-sm font-semibold text-white">{docTitle}</h4>
               <p className="text-xs text-slate-400 flex items-center gap-1.5">
                 <ShieldCheck className="w-3.5 h-3.5 text-amber-400" />
-                Watermarked Copy generated for: <span className="text-amber-300 font-medium">{reviewerName || 'Scholarship Committee'}</span>
+                Verified Copy for: <span className="text-amber-300 font-medium">{reviewerName || 'Scholarship Committee'}</span>
               </p>
             </div>
           </div>
@@ -162,7 +162,7 @@ export const WatermarkModal = ({ isOpen, onClose, docTitle, reviewerName }) => {
               rel="noopener noreferrer" 
               className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium bg-amber-500 hover:bg-amber-400 text-slate-950 transition"
             >
-              <Download className="w-3.5 h-3.5" /> Download Watermarked PDF
+              <Download className="w-3.5 h-3.5" /> Download PDF
             </a>
             <button 
               onClick={onClose}
@@ -176,13 +176,6 @@ export const WatermarkModal = ({ isOpen, onClose, docTitle, reviewerName }) => {
         {/* PDF Frame / Mock Preview */}
         <div className="flex-1 bg-slate-900 p-4 overflow-auto flex flex-col items-center justify-center text-center">
           <div className="w-full max-w-2xl bg-white text-slate-900 rounded-xl p-8 sm:p-12 shadow-2xl relative overflow-hidden my-auto border border-slate-300">
-            
-            {/* Watermark diagonal ribbon */}
-            <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none opacity-15 rotate-[-25deg]">
-              <span className="text-3xl sm:text-5xl font-black text-rose-700 tracking-wider text-center">
-                CONFIDENTIAL — PREPARED FOR {reviewerName?.toUpperCase() || 'SCHOLARSHIP COMMITTEE'} — {new Date().toLocaleDateString()}
-              </span>
-            </div>
 
             <div className="flex justify-between items-center border-b pb-4 mb-6 border-slate-200">
               <div className="text-left">

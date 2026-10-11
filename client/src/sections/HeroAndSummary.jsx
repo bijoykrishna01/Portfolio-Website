@@ -72,7 +72,7 @@ export const HeroSection = ({ lang, onOpenDoc, onOpenGate, currentViewer }) => {
               className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl glass-panel hover:bg-slate-800/80 text-white font-semibold text-sm border border-slate-700 hover:border-amber-500/50 transition transform hover:-translate-y-0.5 shadow-lg"
             >
               <FileDown className="w-4 h-4 text-amber-400" />
-              <span>{lang === 'en' ? 'Official CV (Watermarked)' : 'অফিসিয়াল সিভি'}</span>
+              <span>{lang === 'en' ? 'Official Academic CV' : 'অফিসিয়াল সিভি'}</span>
             </button>
 
             <a
